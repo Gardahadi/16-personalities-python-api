@@ -1,2 +1,2 @@
-# 16-personalities-python-api
+# 16 Personalities Python (Api)
 A backend API for Quiz inspired by 16 personalities
