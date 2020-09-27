@@ -1,0 +1,5 @@
+Flask
+flask-cors
+google-api-python-client
+google-auth
+gunicorn

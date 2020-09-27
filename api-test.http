@@ -1,0 +1,39 @@
+GET http://127.0.0.1:5000/questions
+
+###
+POST http://127.0.0.1:5000/answers
+Content-Type: application/json
+
+{
+    "answers": {
+        "1": 5,
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 5
+    }
+}
+
+###
+
+GET https://quiz.wirasuta.com/api/questions
+
+###
+POST https://quiz.wirasuta.com/api/answers
+Content-Type: application/json
+
+{
+    "answers": {
+        "1": 5,
+        "2": 3,
+        "3": 4,
+        "4": 3,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 5
+    }
+}

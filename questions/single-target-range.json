@@ -1,0 +1,57 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "q": "I like to make sure an event has a great image & public impression",
+      "target": "Public Relations"
+    },
+    {
+      "id": 2,
+      "q": "I am detailed person that likes to make an idea or imagination become a reality",
+      "target": "Operations"
+    },
+    {
+      "id": 3,
+      "q": "I have a good taste when it comes to food",
+      "target": "Logistics"
+    },
+    {
+      "id": 4,
+      "q": "I am interested with the idea of discovering the latest news and new knowledge, especially about finance",
+      "type": "range",
+      "target": "Conference Programming"
+    },
+    {
+      "id": 5,
+      "q": "I like to build mutual beneficial relations with partners",
+      "target": "Corporate Relations"
+    },
+    {
+      "id": 6,
+      "q": "I identify myself as a creative person with a good sense of aesthetic",
+      "type": "range",
+      "target": "Marketing Communications"
+    },
+    {
+      "id": 7,
+      "q": "I like to plan out an event and make sure everything goes on schedule",
+      "target": "Event"
+    },
+    {
+      "id": 8,
+      "q": "I see myself as an extrovert who likes to connect with people from various backgrounds",
+      "target": "Delegate Relations"
+    }
+  ],
+
+  "targets": [
+    "Event",
+    "Conference Programming",
+    "Public Relations",
+    "Marketing Communications",
+    "Corporate Relations",
+    "Operations",
+    "Logistics",
+    "Delegate Relations"
+  ]
+}
