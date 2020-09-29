@@ -1,0 +1,139 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "q": "Baju ibu di depan hampir masuk gerigi motor, tapi pura-pura gak liat aja karena malu negur",
+            "target": 0
+        },
+        {
+            "id": 2,
+            "q": "Aku sih ga mau banyak bicara, cuma mau doain aja yang terbaik buat ini orang - orang yang melanggar di jalan.",
+            "target": 0
+        },
+        {
+            "id": 3,
+            "q": "Abis dikasih jalan, kasih jempol dulu bos!",
+            "target": 0
+        },
+        {
+            "id": 4,
+            "q": "Susah baca GPS, mending langsung tanya orang di jalan",
+            "target": 0
+        },
+        {
+            "id": 5,
+            "q": "Ada yang bawa motor sambil didorong, waktunya samperin dan tolong!",
+            "target": 0
+        },
+        {
+            "id": 6,
+            "q": "Cuma pakai masker kalau lagi ada jerawat.",
+            "target": 1
+        },
+        {
+            "id": 7,
+            "q": "Selama pandemi, naik motor lebih aman sendiri tanpa si doi.",
+            "target": 1
+        },
+        {
+            "id": 8,
+            "q": "Diajak temen buat touring rame-rame sama komunitas, tanpa pikir panjang langsung sikaaaat!",
+            "target": 1
+        },
+        {
+            "id": 9,
+            "q": "Ga perlu pakai masker kan udah pakai helm. Kalau double, gerah dong!",
+            "target": 1
+        },
+        {
+            "id": 10,
+            "q": "Aku akan tahan keinginan muterin komplek, supaya di Indonesia gak ada lagi suspect. Rispekkkk!!!",
+            "target": 1
+        },
+        {
+            "id": 11,
+            "q": "Berasa orang alim tiap sampe rumah, karena di jalan sibuk ngalah dan nahan amarah",
+            "target": 2
+        },
+        {
+            "id": 12,
+            "q": "Di jalan itu bukan cuma bensin yang habis, tapi juga kesabaranku yang menipis",
+            "target": 2
+        },
+        {
+            "id": 13,
+            "q": "TIN TIN! TIN TIN! adalah jalan ninjaku kalo ada yang nyebelin di jalan.",
+            "target": 2
+        },
+        {
+            "id": 14,
+            "q": "Kalo ada keributan di jalan tentu harus videoin biar viral.",
+            "target": 2
+        },
+        {
+            "id": 15,
+            "q": "Ada yang meleng di jalan = teriakan mautku > klakson mobil",
+            "target": 2
+        },
+        {
+            "id": 16,
+            "q": "Rumah temen deket ini kok, gausah pake helm juga santuy!",
+            "target": 3
+        },
+        {
+            "id": 17,
+            "q": "Teng Nong Neng Nong, Palang menutup gas kutancap kereta kubalap",
+            "target": 3
+        },
+        {
+            "id": 18,
+            "q": "Selama jok motor masih muat, bertiga, berempat? Gak masalah, tuh.",
+            "target": 3
+        },
+        {
+            "id": 19,
+            "q": "Buat apa ada 200 km/jam kalo ga digas? Ye gak gais?",
+            "target": 3
+        },
+        {
+            "id": 20,
+            "q": "Saat lampu merah, zebra cross adalah tempatku berhenti, karena aku edgy dan tidak ingin sama dengan yang lain.)",
+            "target": 3
+        }
+    ],
+    "targets": [
+        {
+            "id" : 0,
+            "left_trait" : "E",
+            "left_trait_score": 0,
+            "right_trait" : "I",
+            "right_trait_score":0,
+            "description": ""  
+        },
+       {
+            "id" : 1,
+            "left_trait" : "N",
+            "left_trait_score": 0,
+            "right_trait" : "S",
+            "right_trait_score":0,
+            "description": ""  
+        },
+        {
+            "id" : 2,
+            "left_trait" : "F",
+            "left_trait_score": 0,
+            "right_trait" : "T",
+            "right_trait_score":0,
+            "description": ""  
+        },
+        {
+            "id" : 3,
+            "left_trait" : "P",
+            "left_trait_score": 0,
+            "right_trait" : "J",
+            "right_trait_score":0,
+            "description": ""  
+        }
+    ]
+
+}

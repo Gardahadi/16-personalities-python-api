@@ -17,9 +17,12 @@ SERVICE_ACCOUNT_FILE = 'creds/secret.json'
 credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
+# Get file paths
+questions_path = 'questions/double-target-range.json'
+
 @app.route('/questions', methods=['GET'])
 def get_questions():
-    with open('questions.json', 'r') as question_file :
+    with open(questions_path, 'r') as question_file :
         data = question_file.read()
 
         # parse file
@@ -30,7 +33,7 @@ def get_questions():
 
 @app.route('/answers', methods=['POST'])
 def post_answers():
-    with open('questions.json', 'r') as json_file:
+    with open(questions_path, 'r') as json_file:
         #get questions
         data = json_file.read()
         obj = json.loads(data)
