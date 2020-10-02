@@ -93,9 +93,9 @@ def result():
     # values_to_write = [user["name"], suggestion]
     # write_to_sheets(values_to_write)
 
-    # Recap Answers and get suggestion
-    print("=============TARGETS===============")
-    print(targets)
+    # # Recap Answers and get suggestion
+    # print("=============TARGETS===============")
+    # print(targets)
     result = ""
     for idx in targets:
         left_score = targets[idx]["left_trait_score"]
