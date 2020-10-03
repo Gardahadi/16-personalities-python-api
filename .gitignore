@@ -10,7 +10,7 @@ pyvenv.cfg
 .vscode/
 
 # Secret credentials
-secret/secret.json
+config/secret.json
 
 # Distribution / packaging
 .Python
