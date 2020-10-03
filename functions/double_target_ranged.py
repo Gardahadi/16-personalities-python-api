@@ -31,7 +31,24 @@ def questions():
         quiz_models = json.loads(raw_models)
         questions = quiz_models["questions"]
 
-        return jsonify(questions)
+        question_array = []
+        for idx in questions:
+            question_array.append(questions[idx]['q'])
+
+        # questions = [x['q'] for x in obj['questions']]
+
+        return jsonify(question_array)
+
+
+def answers():
+    with open(model_path, "r") as model_file:
+        raw_models = model_file.read()
+
+        # parse file
+        quiz_models = json.loads(raw_models)
+        answers = quiz_models["answers"]
+
+        return jsonify(answers)
 
 
 def write_to_sheets(values_to_write=["joni", "ENFP"]):

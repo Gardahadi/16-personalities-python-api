@@ -2,7 +2,7 @@ import sys
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import os
-from functions.double_target_ranged import questions, result
+from functions.double_target_ranged import questions, result, answers
 
 project_root = os.path.dirname(os.path.dirname(__file__))
 
@@ -21,6 +21,11 @@ def get_question_function():
 @app.route('/answers', methods=['POST'])
 def post_answers():
     return result()
+
+
+@app.route('/answers', methods=['GET'])
+def get_answer_function():
+    return answers()
 
 
 if __name__ == '__main__':
