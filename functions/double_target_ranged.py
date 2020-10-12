@@ -4,6 +4,7 @@ import json
 import random
 import os
 from google.oauth2 import service_account
+from datetime import datetime
 from googleapiclient.discovery import build
 
 # Get file paths
@@ -59,13 +60,13 @@ def write_to_sheets(values_to_write=["joni", "ENFP"]):
         "https://www.googleapis.com/auth/drive",
         "https://www.googleapis.com/auth/spreadsheets",
     ]
-    SERVICE_ACCOUNT_FILE = "../config/secret.json"
+    SERVICE_ACCOUNT_FILE = root_path + "/functions/secret.json"
     credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES
     )
 
     # write to sheets
-    SPREADSHEET_ID = "1mOcxMaYsuBY3usrCpcZTrjrhRq0Utd0QZs-qeMW4efQ"
+    SPREADSHEET_ID = "1Piqb1ka8cE80jt4eR-yJqcnxRv9XYOVK7tSnD5bnrgQ"
 
     # Create service instance
     service = build("sheets", "v4", credentials=credentials)
@@ -123,5 +124,15 @@ def result():
             result += targets[idx]["right_trait"]
         else:
             result += targets[idx]["left_trait"]
+
+    
+    dateTimeObj = str(datetime.now())
+
+
+    values_to_write = [dateTimeObj, result]
+
+#write to sheets
+    write_to_sheets(values_to_write)
+
 
     return jsonify({"result": result})
