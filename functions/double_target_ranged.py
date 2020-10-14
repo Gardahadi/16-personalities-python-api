@@ -95,7 +95,7 @@ def result():
 
     # Parse requests
     body = request.json
-    # user = body["user"]
+    user = body["name"]
     answers = body["answers"]
 
     # Update target scores
@@ -107,13 +107,6 @@ def result():
         else:
             targets[target_id]["right_trait_score"] += abs(score)
 
-    # # Write to Sheets
-    # values_to_write = [user["name"], suggestion]
-    # write_to_sheets(values_to_write)
-
-    # # Recap Answers and get suggestion
-    # print("=============TARGETS===============")
-    # print(targets)
     result = ""
     for idx in targets:
         left_score = targets[idx]["left_trait_score"]
@@ -125,13 +118,11 @@ def result():
         else:
             result += targets[idx]["left_trait"]
 
-    
     dateTimeObj = str(datetime.now())
 
+    values_to_write = [dateTimeObj, user, result]
 
-    values_to_write = [dateTimeObj, result]
-
-#write to sheets
+    #write to sheets
     write_to_sheets(values_to_write)
 
 
