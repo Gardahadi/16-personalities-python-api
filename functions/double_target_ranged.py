@@ -16,6 +16,7 @@ def load_models_from_file():
     with open(model_path, "r") as model_file:
         raw_models = model_file.read()
 
+        # adadawdawdaw
         # Parse file
         quiz_models = json.loads(raw_models)
         questions = quiz_models["questions"]
